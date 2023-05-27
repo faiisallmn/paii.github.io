@@ -1,0 +1,20 @@
+footer {
+  background-color: rgb(32, 160, 246);
+}
+
+nav {
+  background-color: rgb(32, 160, 246);
+}
+
+.hero {
+  margin-top: 3rem;
+  background-color: #e2edff;
+}
+
+#project {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
