@@ -71,12 +71,12 @@
         </div>
         <div class="row justify-content-evenly">
           <div class="col-md-4">
-            Hallo, perkenalkan nama saya Faishal Muhammad Naufa 19 tahun bertempat di Jawa Barat, Kab Bandung. Saya adalah mahasiswa dari Universitas Islam Nusantara fakultas teknik dengan prodi teknik informatika. Saya adalah seorang yang
-            disiplin dan sangat teliti dalam mengerjakan suatu hal.
+            Hallo, perkenalkan nama saya Faishal Muhammad Naufa 21 tahun bertempat di Jawa Barat, Kab Bandung. Saya adalah mahasiswa dari Universitas Islam Nusantara fakultas teknik dengan prodi teknik informatika. Saya adalah
+            seorang yang disiplin dan sangat teliti dalam mengerjakan suatu hal.
           </div>
           <div class="col-md-4">
-            Saya memiliki kemampuan coding dengan berbagai bahasa pemograman antara lain HTML, CSS, Javascript, Pyhon, C, dan C++. Selain itu saya juga memiliki kemampuan dalam Grapich Designer dan mampu mengoprasikan dengan baik dalam
-            sofware Adobe photoshop, Ilustrator, Premier, After effect, dan Corel Draw.
+            Saya memiliki kemampuan coding dengan berbagai bahasa pemograman antara lain HTML, CSS, Javascript, python, php, dan lain lain. Selain itu saya juga memiliki kemampuan dalam Grapich Designer dan mampu mengoprasikan
+            dengan baik dalam sofware Adobe photoshop, Ilustrator, Adobe Premier, After effect, dan Corel Draw.
           </div>
         </div>
       </div>
@@ -92,38 +92,61 @@
     <!-- project -->
     <section id="project">
       <div class="container" data-aos="fade-in" data-aos-offset="220">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-4">
           <div class="col">
             <h2>Project</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md mb-3">
-            <div class="card">
-              <img src="img/1.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/pos2.png" class="card-img-top" alt="Website Kasir" />
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Website Kasir</h4>
+                <p class="card-text">Website Sistem Kasir yang dirancang menggunakan Laravel dan AdminLTE untuk memudahkan pengelolaan transaksi, stok barang, dan laporan penjualan secara cepat dan efisien.</p>
+                <div class="mt-auto">
+                  <a href="https://github.com/faiisallmn/KASIR" target="_blank" class="btn btn-dark d-inline-flex align-items-center"> <i class="bi bi-github me-2"></i> Lihat di GitHub </a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md mb-3">
-            <div class="card">
-              <img src="img/2.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/codelab.png" class="card-img-top" alt="Website E-Learning" />
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Website E-Learning</h4>
+                <p class="card-text">
+                  Platform Belajar Pemrograman berbasis Laravel dan Laravel Filament, membantu pengguna mempelajari Web Development, Mobile App, dan Data Science. Dilengkapi modul interaktif, evaluasi otomatis, dan sertifikat
+                  kelulusan.
+                </p>
+                <div class="mt-auto">
+                  <a href="https://github.com/faiisallmn/codelab" target="_blank" class="btn btn-dark d-inline-flex align-items-center"> <i class="bi bi-github me-2"></i> Lihat di GitHub </a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md mb-3">
-            <div class="card">
-              <img src="img/3.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/crud 1.png" class="card-img-top" alt="CRUD Laravel" />
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">CRUD Sederhana Produk Buku</h4>
+                <p class="card-text">
+                  Aplikasi CRUD sederhana berbasis Laravel, memudahkan manajemen data buku. Pengguna dapat menambahkan, mengedit, menghapus, dan melihat data seperti judul, penulis, penerbit, dan deskripsi buku.
+                </p>
+                <div class="mt-auto">
+                  <a href="https://github.com/faiisallmn/crud-sederhana" target="_blank" class="btn btn-dark d-inline-flex align-items-center"> <i class="bi bi-github me-2"></i> Lihat di GitHub </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -198,7 +221,7 @@
         // tampilkan tombol loading, hilang kan tombol kirim
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, {method: "POST", body: new FormData(form)})
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             // tampilkan tombol kirim, hilang kan tombol loading
             btnLoading.classList.toggle("d-none");
